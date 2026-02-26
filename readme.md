@@ -1,0 +1,1 @@
+# Tema de WordPress Granada 2026
