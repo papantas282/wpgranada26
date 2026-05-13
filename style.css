@@ -114,3 +114,100 @@ Tags: full-site-editing, block-patterns, custom-colors, custom-fonts, translatio
 		padding-right: var(--wp--preset--spacing--50) !important;
 	}
 }
+/* =====================================================
+   FIXES HEADER + MENU MÓVIL (FSE / NAVIGATION)
+   ===================================================== */
+
+/* 1. Evita el corte del header al cambiar de página */
+header,
+.wp-site-blocks > header {
+    min-height: 88px;
+    overflow: visible;
+}
+
+/* Más altura en móvil (hamburguesa + títulos grandes) */
+@media (max-width: 768px) {
+    header,
+    .wp-site-blocks > header {
+        min-height: 120px;
+    }
+}
+
+/* 2. Corrige botones rotos dentro del menú móvil */
+.wp-block-navigation__responsive-container
+.wp-block-button__link {
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    min-width: 220px;
+    text-align: center;
+}
+
+/* 3. Asegura que el overlay del menú no comprima el contenido */
+.wp-block-navigation__responsive-container-content {
+    width: 100%;
+    align-items: center;
+}
+
+/* 4. Mejora legibilidad general del menú móvil */
+.wp-block-navigation__responsive-container a {
+    line-height: 1.4;
+}
+/* =====================================================
+   FIXES HEADER + MENU MÓVIL (FSE / NAVIGATION)
+   ===================================================== */
+
+/* 1. Evita el corte del header al cambiar de página */
+header,
+.wp-site-blocks > header {
+    min-height: 88px;
+    overflow: visible;
+}
+
+/* Más altura en móvil (hamburguesa + títulos grandes) */
+@media (max-width: 768px) {
+    header,
+    .wp-site-blocks > header {
+        min-height: 120px;
+    }
+}
+
+/* 2. Corrige botones rotos dentro del menú móvil */
+.wp-block-navigation__responsive-container
+.wp-block-button__link {
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+    min-width: 220px;
+    text-align: center;
+}
+
+/* 3. Asegura que el overlay del menú no comprima el contenido */
+.wp-block-navigation__responsive-container-content {
+    width: 100%;
+    align-items: center;
+}
+
+/* 4. Mejora legibilidad general del menú móvil */
+.wp-block-navigation__responsive-container a {
+    line-height: 1.4;
+}
+
+/* =====================================================
+   FIX BOTONES QUE SE PARTEN EN EL CONTENIDO
+   ===================================================== */
+
+/* Botones del contenido: nunca romper texto en vertical */
+.wp-block-button .wp-block-button__link {
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow-wrap: normal;
+}
+
+/* En móvil permitimos salto a DOS líneas, pero no letra a letra */
+@media (max-width: 768px) {
+    .wp-block-button .wp-block-button__link {
+        white-space: normal;
+        text-align: center;
+    }
+}
