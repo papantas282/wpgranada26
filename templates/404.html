@@ -1,31 +1,47 @@
 <!-- wp:template-part {"slug":"header","area":"header"} /-->
 
-<!-- wp:group {"tagName":"main","align":"full","backgroundColor":"primary-light","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|100","right":"var:preset|spacing|100"},"blockGap":"var:preset|spacing|60"}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group alignfull has-primary-light-background-color has-background">
+<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100","left":"var:preset|spacing|100","right":"var:preset|spacing|100"},"blockGap":"var:preset|spacing|60"}},"backgroundColor":"primary-light","layout":{"type":"constrained"}} -->
+<main class="wp-block-group alignfull has-primary-light-background-color has-background" style="padding-top:var(--wp--preset--spacing--100);padding-right:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100);padding-left:var(--wp--preset--spacing--100)"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"lineHeight":"1"}},"textColor":"primary","fontSize":"colossal","fontFamily":"heading"} -->
+<h1 class="wp-block-heading has-text-align-center has-primary-color has-text-color has-heading-font-family has-colossal-font-size" style="line-height:1">404</h1>
+<!-- /wp:heading -->
 
-	<!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"lineHeight":"1"}},"textColor":"primary","fontSize":"colossal","fontFamily":"heading"} -->
-	<h1 class="wp-block-heading has-text-align-center has-primary-color has-text-color has-heading-font-family has-colossal-font-size" style="line-height:1">404</h1>
-	<!-- /wp:heading -->
+<!-- wp:heading {"textAlign":"center","fontSize":"xx-large","fontFamily":"heading"} -->
+<h2 class="wp-block-heading has-text-align-center has-heading-font-family has-xx-large-font-size">Página no encontrada</h2>
+<!-- /wp:heading -->
 
-	<!-- wp:heading {"textAlign":"center","level":2,"fontSize":"xx-large","fontFamily":"heading"} -->
-	<h2 class="wp-block-heading has-text-align-center has-heading-font-family has-xx-large-font-size">Página no encontrada</h2>
-	<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center","textColor":"secondary","fontSize":"large","fontFamily":"body"} -->
+<p class="has-text-align-center has-secondary-color has-text-color has-body-font-family has-large-font-size">Lo sentimos, la página que buscas no existe o ha sido movida.</p>
+<!-- /wp:paragraph -->
 
-	<!-- wp:paragraph {"align":"center","textColor":"secondary","fontSize":"large","fontFamily":"body"} -->
-	<p class="has-text-align-center has-secondary-color has-text-color has-body-font-family has-large-font-size">Lo sentimos, la página que buscas no existe o ha sido movida.</p>
-	<!-- /wp:paragraph -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="http://localhost:8883/eventos/" data-type="page" data-id="45">Eventos</a></li>
+<!-- /wp:list-item -->
 
-	<!-- wp:search {"label":"Buscar","placeholder":"¿Qué estás buscando?","buttonText":"Buscar","width":50,"widthUnit":"%","buttonPosition":"button-inside","align":"center"} /-->
+<!-- wp:list-item -->
+<li><a href="http://localhost:8883/sobre-nosotros/" data-type="page" data-id="37">Sobre nosotros</a></li>
+<!-- /wp:list-item -->
 
-	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}}} -->
-	<div class="wp-block-buttons">
-		<!-- wp:button -->
-		<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/">← Volver al inicio</a></div>
-		<!-- /wp:button -->
-	</div>
-	<!-- /wp:buttons -->
+<!-- wp:list-item -->
+<li><a href="http://localhost:8883/contacto/" data-type="page" data-id="48">Contacto</a></li>
+<!-- /wp:list-item -->
 
-</main>
+<!-- wp:list-item -->
+<li><a href="http://localhost:8883/reuniones/" data-type="page" data-id="80">Reuniones</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:search {"label":"Buscar","placeholder":"¿Qué buscas?","width":50,"widthUnit":"%","buttonText":"Buscar","buttonPosition":"button-inside","align":"center"} /-->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"style":{"border":{"width":"0px","style":"none","radius":{"topLeft":"13px","topRight":"13px","bottomLeft":"13px","bottomRight":"13px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="http://localhost:8883" style="border-style:none;border-width:0px;border-top-left-radius:13px;border-top-right-radius:13px;border-bottom-left-radius:13px;border-bottom-right-radius:13px">🡠 Volver al inicio</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"style":{"border":{"radius":{"topLeft":"13px","topRight":"13px","bottomLeft":"13px","bottomRight":"13px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="http://localhost:8883/eventos/" style="border-top-left-radius:13px;border-top-right-radius:13px;border-bottom-left-radius:13px;border-bottom-right-radius:13px">Siguiente evento 🡢</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","area":"footer"} /-->
